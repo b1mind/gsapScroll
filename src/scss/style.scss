@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap');
+//- //< Sassy settings
+$minWidthLg: 1000px;
+$minWidthMed: 800px;
+$minWidthSml: 420px;
+//- //>Base settings
+:root {
+	--color: #fff;
+	--color2: #000;
+	--greenSock: #88ce02;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	min-height: 100%;
+	margin: 0;
+	color: black;
+	font-family: 'Lato', sans-serif;
+	background: skyblue;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+h1 {
+	color: black;
+	font-size: 3rem;
+}
+
+h1,
+h2 {
+	font-family: 'Raleway', sans-serif;
+}
+
+span {
+	display: inline-block;
+	//color: var(--greenSock);
+	color: white;
+}
+
+main {
+	position: relative;
+	.bgImg {
+		width: 100%;
+		position: fixed;
+		top: 200px;
+		left: 15%;
+		//visibility: hidden;
+		opacity: 0;
+		z-index: -420;
+		@media (max-width: $minWidthSml) {
+			min-width: 125%;
+			top: 50px;
+			left: 0;
+		}
+	}
+	//background: url('') no-repeat top fixed;
+}
+.center {
+	text-align: center;
+}
+
+.scrollMe {
+	height: 100vh;
+}
+.grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	justify-items: center;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.responsibly {
+	//overflow: hidden;
+}
+
+.fauxView {
+	width: 305px;
+	height: 500px;
+	overflow: hidden;
+	//gg browsers .. hide scrollBars x5
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	-webkit-appearance: none;
+	&::-webkit-scrollbar {
+		width: 0;
+		height: 0;
+		display: none;
+		-webkit-appearance: none;
+	}
+}
+
+.spacer {
+	height: 800px;
+}
+
+.liquid,
+.liquidDark,
+.scrollText {
+	visibility: hidden;
+}
+
+.greensockIcon {
+	margin-top: 6rem;
+	padding: 0 1rem;
+	visibility: hidden;
+	background: rgba(0, 0, 0, 1);
+	border-radius: 1rem;
+	border: 2px solid var(--greenSock);
+	box-shadow: 0 0 1px 4px rgba(0, 0, 0, 1);
+}
