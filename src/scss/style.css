@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap");
+:root {
+  --color: #fff;
+  --color2: #000;
+  --greenSock: #88ce02;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  background: skyblue;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  color: black;
+  font-size: 3rem;
+}
+
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+span {
+  display: inline-block;
+  color: white;
+}
+
+main {
+  position: relative;
+}
+
+main .bgImg {
+  width: 100%;
+  position: fixed;
+  top: 200px;
+  left: 15%;
+  opacity: 0;
+  z-index: -420;
+}
+
+@media (max-width: 420px) {
+  main .bgImg {
+    min-width: 125%;
+    top: 50px;
+    left: 0;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.scrollMe {
+  height: 100vh;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.fauxView {
+  width: 305px;
+  height: 480px;
+  overflow: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-appearance: none;
+}
+
+.fauxView::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+  -webkit-appearance: none;
+}
+
+.liquid,
+.liquidDark,
+.scrollText {
+  visibility: hidden;
+}
+
+.greensockIcon {
+  margin-top: 6rem;
+  padding: 0 1rem;
+  visibility: hidden;
+  background: black;
+  border-radius: 1rem;
+  border: 2px solid var(--greenSock);
+  -webkit-box-shadow: 0 0 1px 4px black;
+          box-shadow: 0 0 1px 4px black;
+}

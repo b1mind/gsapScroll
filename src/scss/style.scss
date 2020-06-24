@@ -99,7 +99,7 @@ main {
 
 .fauxView {
 	width: 305px;
-	height: 500px;
+	height: 480px;
 	overflow: hidden;
 	//gg browsers .. hide scrollBars x5
 	scrollbar-width: none;
@@ -111,10 +111,6 @@ main {
 		display: none;
 		-webkit-appearance: none;
 	}
-}
-
-.spacer {
-	height: 800px;
 }
 
 .liquid,
