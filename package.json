@@ -17,7 +17,7 @@
 		"pug": "^3.0.0",
 		"node-sass": "^4.14.1",
 		"parcel-plugin-static-files-copy": "^2.3.1",
-		"postcss": "^7.0.31"
+		"postcss": "^8.2.10"
 	},
 	"dependencies": {
 		"src": "^1.1.2"
